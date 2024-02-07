@@ -1,0 +1,168 @@
+.discount__container {
+    background: #8af8d3;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+.discount__container .discount__wrapper {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.discount__container .discount__wrapper h2 {
+    font-size: 38px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    width:650px;;
+}
+.discount__container .discount__wrapper .discount__text {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+.discount__items .discount__timer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.discount__items .discount__timer .cont_time p {
+    font-size: 60px;
+    font-weight: bold;
+}
+.discount__items .discount__timer .cont_time {
+    padding-right: 30px;
+}
+.discount__items .btn button {
+    width:10rem;
+    height:35px;
+    border-radius:20px;
+    background: green;
+    color:white;
+    text-transform: uppercase;
+    border:none;
+    cursor:pointer;
+    font-weight: bold;
+
+}
+.discount__items .btn button:hover {
+    background: rgb(38, 217, 38);
+    transition: all 0.2s ease;
+}
+.discount__container
+.discount__items
+.discount__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount__container .discount__right__cont img {
+    width:40vw;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+@media screen and (max-width:1150px){
+    .discount__container::-webkit-scrollbar{
+        display:none;
+    }
+}
+@media screen and (max-width:1090px){
+    .discount__items .discount__timer .cont_time p {
+        font-size: 37px;
+    }
+    .discount__container .discount__right__cont img {
+        width:35vw;
+    }
+}
+@media screen and (max-width:1000px){
+    .discount__container {
+        overflow-x:hidden;
+        /* height:fit-content; */
+        padding-top:25px;
+        padding-bottom:40px;
+    }
+    .discount__container .discount__wrapper h2{
+        font-size: 33px;
+        width:600px;
+    }
+    .discount__container .discount__right__cont img {
+        width:32vw;
+    }
+}
+@media screen and (max-width:890px){
+    .discount__container {
+        position:relative;
+    }
+    .discount__container .discount__right__cont {
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+    }
+    .discount__container .discount__right__cont img {
+        width:40vw;
+        opacity:0.5;
+    }
+    .discount__container .discount__wrapper {
+        z-index:10;
+    }
+    .discount__container .discount__wrapper h2 {
+        margin-left:90px;
+    }
+}
+@media screen and (max-width:700px){
+    .discount__container .discount__wrapper h2 {
+        margin-left:70px;
+    }
+}
+@media screen and (max-width:650px){
+    .discount__container .discount__wrapper h2 {
+        margin-left:50px;
+    }
+}
+@media screen and (max-width:600px){
+    .discount__container .discount__wrapper h2 {
+        margin-left:0;
+    }
+}
+@media screen and (max-width:550px){
+    .discount__container .discount__wrapper h2 {
+        font-size:28px;
+        width:500px;
+    }
+}
+@media screen and (max-width:475px){
+    .discount__container .discount__wrapper h2 {
+        font-size:25px;
+        width:450px;
+    }
+    .discount__items .discount__timer .cont_time p {
+        font-size:29px;
+    }
+}
+@media screen and (max-width:425px){
+    .discount__container .discount__wrapper h2 {
+        width:400px;
+    }
+
+}
+@media screen and (max-width:390px){
+    .discount__container .discount__wrapper h2 {
+        font-size:20px;
+        width:350px;
+    }
+    .discount__container .discount__wrapper .discount__text {
+        font-size:15px;
+    }
+     .discount__items .discount__timer .cont_time {
+        padding-right: 15px;
+    }
+     .discount__items .discount__timer .cont_time p {
+        font-size:24px;
+    }
+}
+@media screen and (max-width:330px){
+    .discount__container .discount__wrapper h2 {
+        width:300px;
+        margin-left:10px;
+    }
+
+}

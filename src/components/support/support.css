@@ -1,0 +1,533 @@
+.support__container {
+    width:100%;
+    overflow-y:hidden;
+    margin-top: 40px;
+}
+.support__container .support__content__wrapper {
+    border-bottom: 1px solid gray;
+    width:100%;
+    max-width:95%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.support__content__wrapper .support__content {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.support__content .support__icon {
+    background: white;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.support__content .support__icon .icon_truck {
+    font-size: 26px;
+    color:green;
+}
+.support__content .support__icon .icon_truck:hover {
+    animation:spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform : rotate(0deg);}
+    100% { transform:rotate(360deg);}
+}
+.support__content .support__text {
+    margin-left:15px;
+}
+.support__content .support__text h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+.support__content .support__text p {
+    color:gray;
+    width:300px;
+    font-size: 13px;
+}
+
+    /* SUPPORT INFO CONTAINER */
+.support__info__container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.support__info__container .support__info .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.support__info__container .support__info .logo span {
+    font-size: 30px;
+    text-transform:lowercase;
+    color:rgb(93, 209, 93);
+}
+.support__info__container .support__text p {
+    color:gray;
+    font-size: 12px;
+    line-height:20px;
+    margin-bottom: 10px;
+}
+.support__container .support__contact__info {
+    display: block;
+}
+.contact__num, .contact__email, .contact__address {
+    display: flex;
+    align-items: center;
+}
+.contact__icon {
+    margin-right: 10px;
+    color:green;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contact__comm {
+    font-size: 13px;
+    text-decoration: none;
+    color:grey;
+}
+.contact__comm a {
+    text-decoration: none;
+    color:grey;
+}
+.support__info h4 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size:18px;
+    margin-bottom: 15px;
+}
+.support__info_2, .support__info_3,.support__info_4 {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.support__info__list li {
+    list-style-type: none;
+    line-height:28px;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.support__info__list li a {
+    text-decoration: none;
+    color:gray;
+}
+.support__info__list li a:hover {
+    color:green;
+}
+.support__info .support__info__gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.support__info__gallery .img_cont {
+    margin-right: 10px;
+    position:relative;
+
+}
+.support__info__gallery .img_cont img {
+    width:5rem;
+    cursor: pointer;
+}
+.support__info__gallery .img_cont .icon_gal {
+    visibility: hidden;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.support__info__gallery .img_cont:hover .icon_gal {
+    visibility: visible;
+}
+.support__info__gallery .img_cont a:hover::before {
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 50%;
+    height:95%;
+    width:100%;
+    visibility: visible;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.5s ease-in-out;
+}
+.support__info__gallery .img_cont a::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    height:75%;
+    width:100%;
+    visibility:hidden;
+}
+.support__info__gallery .img_cont:hover::before{
+    visibility:visible;
+}
+
+
+@media screen and (max-width:1125px){
+    .support__info__container {
+        overflow-x:hidden;
+    }
+    .support__container::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (max-width:1115px){
+    .support__info_2, .support__info_3,.support__info_4 {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:1090px){
+    .support__container .support__content__wrapper {
+        max-width:90%;
+        margin-left:20px;
+    }
+}
+@media screen and (max-width:1080px){
+    .support__info_2, .support__info_3,.support__info_4 {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:1078px){
+    .support__container .support__content__wrapper {
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .support__content .support__icon .icon_truck {
+        font-size: 35px;
+    }
+    .support__content .support__text h3 {
+        font-size: 20px;
+    }
+    .support__content .support__text p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1055px){
+    .support__info_2, .support__info_3,.support__info_4 {
+        margin-left:15px;
+    }
+    .support__info h4 {
+        font-size:15px;
+    }
+
+}
+@media screen and (max-width:997px){
+    .support__info__container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .support__info__container .support__info .logo {
+        font-size: 22px;
+    }
+    .support__info__container .support__info .logo span {
+        font-size:28px;
+    }
+    .support__info__container .support__text p {
+        font-size: 14px;
+    }
+    .contact__comm {
+        font-size: 14px;
+    }
+    .support__info__list li {
+        font-size: 14px;
+    }
+    .support__info_3 {
+        margin-left: 0;
+    }
+    .support__info h4 {
+        font-size:22px;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:40%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:80%;
+    }
+}
+@media screen and (max-width:970px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:42%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:83%;
+    }
+}
+@media screen and (max-width:930px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:45%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:85%;
+    }
+}
+
+@media screen and (max-width:915px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:45%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:88%;
+    }
+}
+@media screen and (max-width:890px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:47%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:90%;
+    }
+}
+@media screen and (max-width:870px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:47%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:93%;
+    }
+}
+@media screen and (max-width:840px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:51%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:96%;
+    }
+}
+@media screen and (max-width:800px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:51%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:100%;
+    }
+}
+@media screen and (max-width:765px){
+    .support__info__container {
+        overflow-x:hidden;
+    }
+    .support__container::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (max-width:730px){
+    .support__content .support__icon .icon_truck {
+        font-size: 28px;
+    }
+    .support__content .support__text h3 {
+        font-size:17px;
+    }
+    .support__content .support__text p {
+        width:280px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:715px){
+    .support__container .support__content__wrapper {
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .support__content .support__icon .icon_truck {
+        font-size: 35px;
+    }
+    .support__content .support__text h3 {
+        font-size:22px;
+    }
+    .support__content .support__text p {
+        width:400px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:680px){
+    .support__info h4 {
+        font-size:19px;
+    }
+    .support__info_2,.support__info_4  {
+        margin-left: 50px;
+    }
+    .support__info .support__info__gallery {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:80%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:42%;
+    }
+    .support__info__gallery .img_cont img {
+        width:4rem;
+    }
+}
+@media screen and (max-width:665px){
+    .support__info__gallery .img_cont a:hover::before{
+        width:83%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:42%;
+    }
+}
+@media screen and (max-width:655px){
+    .support__info__gallery .img_cont a:hover::before{
+        width:85%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:42%;
+    }
+}
+@media screen and (max-width:645px){
+    .support__info__gallery .img_cont a:hover::before{
+        width:87%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:42%;
+    }
+}
+@media screen and (max-width:635px){
+    .support__info__gallery .img_cont a:hover::before{
+        width:90%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:45%;
+    }
+}
+@media screen and (max-width:615px){
+    .support__info__gallery .img_cont a:hover::before{
+        width:93%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:47%;
+    }
+}
+@media screen and (max-width:600px){
+    .support__info__gallery .img_cont a:hover::before{
+        width:95%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:48%;
+    }
+}
+@media screen and (max-width:585px){
+    .support__info__gallery .img_cont a:hover::before{
+        width:100%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        left:50%;
+    }
+}
+@media screen and (max-width:555px){
+    .support__info__container {
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:start;
+    }
+    .support__info_2, .support__info_4 {
+        margin-left: 5px;
+    }
+    .support__info .support__info__gallery {
+        grid-template-columns:repeat(4,1fr);
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        height:90%;
+    }
+    .support__info__gallery .img_cont .icon_gal {
+        top:45%;
+        left:50%;
+    }
+    .support__info__list {
+        display: block;
+    }
+    .support__info {
+        display:block;
+    }
+}
+@media screen and (max-width:500px){
+    .support__content .support__icon .icon_truck {
+        font-size: 28px;
+    }
+    .support__content .support__text h3 {
+        font-size:19px;
+    }
+    .support__content .support__text p {
+        width:300px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:390px){
+    .support__container .support__content__wrapper {
+        margin-left:5px;
+        max-width:100%;
+    }
+    .support__content .support__icon .icon_truck {
+        font-size: 26px;
+    }
+    .support__content .support__text h3 {
+        font-size:16px;
+    }
+    .support__content .support__text p {
+        width:280px;
+        font-size: 14px;
+    }
+    .support__info__container .support__info .logo {
+        font-size: 19px;
+    }
+    .support__info__container .support__info .logo span {
+        font-size:22px;
+    }
+    .support__info__container .support__text p {
+        font-size: 13px;
+    }
+    .support__info h4 {
+        font-size:19px;
+    }
+}
+@media screen and (max-width:360px){
+    .support__content .support__icon .icon_truck {
+        font-size: 24px;
+    }
+    .support__content .support__text h3 {
+        font-size:15px;
+    }
+    .support__content .support__text p {
+        width:260px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:335px){
+    .support__content .support__icon .icon_truck {
+        font-size: 24px;
+    }
+    .support__content .support__text {
+        margin-left:5px;
+    }
+    .support__content .support__text h3 {
+        font-size:15px;
+    }
+    .support__content .support__text p {
+        width:240px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:325px){
+    .support__info__gallery .img_cont .icon_gal {
+        left:50%;
+    }
+    .support__info__gallery .img_cont a:hover::before{
+        width:100%;
+    }
+    .support__info__gallery .img_cont img {
+        width:3.5rem;
+    }
+}

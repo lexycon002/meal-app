@@ -1,0 +1,181 @@
+.team__list__container {
+    width:100%;
+    overflow-y:hidden;
+}
+.team__list__container .team__list__head__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    overflow-x:hidden;
+}
+.team__list__container .team__list__head__text h1 {
+    text-transform: capitalize;
+    font-size: 35px;
+}
+.team__list__container .team__list__gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Team Member styles */
+.team__view {
+    position:relative;
+    margin-right: 60px;
+    padding-bottom:15px;
+}
+.team__view:hover {
+    transform:scale(1.1);
+    transition:transform .3s ease-in-out;
+}
+
+.team__view:hover .team__view__img::before {
+    opacity: 1;
+}
+.team__view .team__view__img img {
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    border:2px solid green;
+}
+.team__view .team__other__info {
+    text-align:center;
+}
+.team__view .team__other__info p {
+    font-weight:bold;
+    text-align:center;
+}
+.team__view .team__other__info span {
+    color:gray;
+}
+
+@media screen and (max-width:1000px) {
+    .team__view {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:835px) {
+    .team__view {
+        margin-right:10px;
+    }
+    .team__view .team__other__info p {
+        font-size:14px;
+    }
+    .team__view .team__other__info span {
+        font-size:12px;
+    }
+    .team__view .team__view__img img {
+        width:130px;
+        height:130px;
+    }
+}
+@media screen and (max-width:730px) {
+    .team__view .team__other__info p {
+        font-size:13px;
+    }
+    .team__view .team__other__info span {
+        font-size:11px;
+    }
+    .team__view .team__view__img img {
+        width:100px;
+        height:100px;
+    }
+}
+@media screen and (max-width:655px) {
+    .team__list__container .team__list__gallery {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .team__view .team__view__img{
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+    .team__view .team__other__info p {
+        font-size:15px;
+    }
+    .team__view .team__other__info span {
+        font-size:13px;
+    }
+}
+@media screen and (max-width:550px) {
+    .team__list__container .team__list__head__text h1 {
+        font-size:28px;
+    }
+    .team__view .team__other__info {
+        margin-left:30px;
+    }
+    .team__view .team__other__info p {
+        font-size:15px;
+    }
+    .team__view .team__other__info span {
+        font-size:13px;
+    }
+}
+@media screen and (max-width:450px) {
+    .team__view .team__view__img{
+        margin-left:60px;
+    }
+    .team__view .team__other__info {
+        margin-left: 20px;
+    }
+    .team__view .team__other__info p {
+        font-size:13px;
+    }
+    .team__view .team__other__info span {
+        font-size:11px;
+    }
+}
+@media screen and (max-width:405px) {
+    .team__view .team__other__info p {
+        font-size:13px;
+    }
+    .team__view .team__other__info span {
+        font-size:11px;
+    }
+}
+@media screen and (max-width:375px) {
+    .team__view .team__view__img {
+        margin-left: 50px;
+    }
+    .team__view .team__other__info {
+        margin-left:20px;
+    }
+    .team__view .team__other__info p {
+        font-size:13px;
+    }
+    .team__view .team__other__info span {
+        font-size:11px;
+    }
+}
+@media screen and (max-width:350px) {
+    .team__view .team__view__img {
+        margin-left: 30px;
+    }
+    .team__view .team__other__info {
+        margin-left:10px;
+    }
+    .team__view .team__other__info p {
+        font-size:13px;
+    }
+    .team__view .team__other__info span {
+        font-size:11px;
+    }
+}
+@media screen and (max-width:330px) {
+    .team__view .team__view__img {
+        margin-left:30px;
+    }
+    .team__view .team__other__info {
+        margin-left:5px;
+    }
+    .team__view .team__other__info p {
+        font-size:12px;
+    }
+    .team__view .team__other__info span {
+        font-size:10px;
+    }
+}

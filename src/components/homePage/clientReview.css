@@ -1,0 +1,362 @@
+.client__review__container {
+    background:#4c9d6ae1;
+    height:100%;
+    width:100%;
+    min-height: 50vh;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    overflow-y:hidden;
+}
+.client__review__container .client__review__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 60px;
+}
+.client__review__heading h2 {
+    font-size:30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.client__review__container .client__review__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.client__review__wrapper
+.client__review__sm__cont {
+    background: white;
+    width:22rem;
+    height:25vh;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-left:10px;
+}
+.client__review__sm__cont .client__info {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.client__info .client__info__item {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.client__info__item .client__img img {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+.client__info__item .client__img .quote {
+    position:absolute;
+    top:50%;
+    left:27%;
+    background: green;
+    height:20px;
+    width:20px;
+    border-radius:10px;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.client__img .icon_quote {
+    font-size:10px;
+    padding-left:5px;
+}
+.client__info__item .client__cred {
+    margin-left:15px;
+}
+.client__info__item .client__cred p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.client__info__item .client__cred span {
+    font-size: 13px;
+    color:grey;
+}
+.client__info .client__ratings {
+    margin-left:40px;
+}
+.client__info .client__ratings .rating {
+    color:#adad12;
+    font-size: 18px;
+}
+.client__review__sm__cont .client__says p{
+    width:350px;
+    color:gray;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1150px) {
+    .client__review__container .client__review__wrapper {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .client__review__wrapper
+    .client__review__sm__cont {
+        margin-left:30px;
+        margin-bottom: 20px;
+        width:26rem;
+    }
+    .client__info__item .client__img .quote {
+        left:25%;
+    }
+    .client__info__item .client__cred p {
+        font-size: 16px;
+    }
+    .client__info__item .client__cred span {
+        font-size: 15px;
+    }
+    .client__info .client__ratings {
+        margin-left:80px;
+    }
+    .client__review__sm__cont .client__says p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:950px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        margin-left:10px;
+        width:24rem;
+    }
+    .client__info .client__ratings {
+        margin-left:50px;
+    }
+}
+@media screen and (max-width:835px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        margin-left:10px;
+        width:22rem;
+    }
+    .client__info .client__ratings {
+        margin-left:20px;
+    }
+    .client__review__sm__cont .client__says p{
+        font-size: 13px;
+    }
+    .client__info__item .client__cred p {
+        font-size: 15px;
+    }
+    .client__info__item .client__cred span {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:768px) {
+    .client__review__container .client__review__wrapper {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .client__review__wrapper
+    .client__review__sm__cont {
+        margin-left:10px;
+        width:40rem;
+    }
+    .client__info__item .client__img img {
+        width:80px;
+        height:80px;
+    }
+    .client__info__item .client__img .quote {
+        left:27%;
+    }
+    .client__info .client__ratings {
+        margin-left:250px;
+    }
+    .client__info .client__ratings .rating {
+        font-size:22px;
+    }
+    .client__info .client__ratings .n_rating {
+        font-size:22px;
+    }
+    .client__review__sm__cont .client__says p{
+        font-size: 14px;
+    }
+    .client__info__item .client__cred p {
+        font-size: 19px;
+    }
+    .client__info__item .client__cred span {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:680px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        margin-left:10px;
+        width:35rem;
+    }
+    .client__info__item .client__img img {
+        width:80px;
+        height:80px;
+    }
+    .client__info .client__ratings {
+        margin-left:150px;
+    }
+}
+@media screen and (max-width:600px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        margin-left:10px;
+        width:30rem;
+    }
+
+    .client__info__item .client__img img {
+        width:70px;
+        height:70px;
+    }
+    .client__info__item .client__img .quote {
+        left:25%;
+    }
+    .client__info .client__ratings {
+        margin-left:100px;
+    }
+        .client__info .client__ratings .rating {
+        font-size:18px;
+    }
+    .client__info .client__ratings .n_rating {
+        font-size:18px;
+    }
+    .client__review__sm__cont .client__says p{
+        font-size: 14px;
+    }
+    .client__info__item .client__cred p {
+        font-size: 17px;
+    }
+    .client__info__item .client__cred span {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:515px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        width:27rem;
+    }
+}
+@media screen and (max-width:470px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        width:25rem;
+    }
+    .client__info__item .client__img img {
+        width:60px;
+        height:60px;
+    }
+    .client__info__item .client__img .quote {
+        left:23%;
+    }
+    .client__info .client__ratings {
+        margin-left:70px;
+    }
+}
+@media screen and (max-width:435px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        width:23rem;
+    }
+    .client__info .client__ratings {
+        margin-left:50px;
+    }
+}
+@media screen and (max-width:400px) {
+    .client__review__heading h2 {
+        font-size:27px;
+    }
+    .client__review__wrapper
+    .client__review__sm__cont {
+        width:21rem;
+    }
+    .client__info .client__ratings {
+        margin-left:50px;
+    }
+    .client__info .client__ratings .rating {
+        font-size:15px;
+    }
+    .client__info .client__ratings .n_rating {
+        font-size:15px;
+    }
+    .client__review__sm__cont .client__says p{
+        width:300px;
+        font-size: 13px;
+    }
+    .client__info__item .client__cred p {
+        font-size: 15px;
+    }
+    .client__info__item .client__cred span {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:375px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        width:20rem;
+    }
+    .client__info .client__ratings {
+        margin-left:40px;
+    }
+    .client__info .client__ratings .rating {
+        font-size:15px;
+    }
+    .client__info .client__ratings .n_rating {
+        font-size:15px;
+    }
+    .client__review__sm__cont .client__says p{
+        width:300px;
+        font-size: 13px;
+    }
+    .client__info__item .client__cred p {
+        font-size: 15px;
+    }
+    .client__info__item .client__cred span {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:350px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        width:19rem;
+    }
+    .client__info .client__ratings {
+        margin-left:10px;
+    }
+    .client__review__sm__cont .client__says p{
+        width:280px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:335px) {
+    .client__review__wrapper
+    .client__review__sm__cont {
+        width:17rem;
+    }
+    .client__info .client__ratings {
+        margin-left:0;
+    }
+    .client__info .client__ratings .rating {
+        font-size:13px;
+    }
+    .client__info .client__ratings .n_rating {
+        font-size:13px;
+    }
+    .client__review__sm__cont .client__says p{
+        width:250px;
+        font-size: 11px;
+    }
+    .client__info__item .client__cred p {
+        font-size: 14px;
+    }
+    .client__info__item .client__cred span {
+        font-size: 13px;
+    }
+    .client__info__item .client__cred {
+        margin-left:10px;
+    }
+    .client__review__heading h2 {
+        font-size:25px;
+    }
+}

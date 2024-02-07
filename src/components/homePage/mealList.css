@@ -1,0 +1,230 @@
+.meallist__container {
+    background: rgb(190, 240, 190);
+    width:100%;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x:hidden;
+    margin-right: 10px;
+
+}
+.meallist__container .meallist__sm__bg {
+    background: #a4c0a4;
+    border-radius: 5px;
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:10px;
+    margin-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.meallist__sm__bg .meallist__text {
+    line-height: 30px;
+}
+.meallist__sm__bg .meallist__text h4 {
+    font-size: 22px;
+    color:black;
+    font-weight: bold;
+}
+.meallist__sm__bg .meallist__text p {
+    font-size: 18px;
+}
+.meallist__sm__bg .meallist__text span {
+    color:#032003;
+    font-size:15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.meallist__sm__bg .meallist__img img {
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    background:rgba(0,0,0,0.8);
+}
+@media screen and (max-width:1333px){
+.meallist__container .meallist__sm__bg  {
+    /* width:28rem; */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+}
+@media screen and (max-width:1213px){
+.meallist__container .meallist__sm__bg  {
+    /* width:28rem; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+@media screen and (max-width:1050px){
+    .meallist__sm__bg .meallist__text h4 {
+        font-size: 20px;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:1000px){
+.meallist__container .meallist__sm__bg  {
+    width:30rem;
+    /* height:150px; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+}
+@media screen and (max-width:940px){
+.meallist__container .meallist__sm__bg  {
+    width:32rem;
+    }
+    .meallist__sm__bg .meallist__img img {
+        width:80px;
+        height:80px;
+    }
+}
+@media screen and (max-width:896px){
+    .meallist__sm__bg .meallist__text  {
+        line-height: 27px;
+    }
+    .meallist__sm__bg .meallist__text h4 {
+        font-size: 20px;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size: 16px;
+    }
+
+
+}
+@media screen and (max-width:880px){
+      .meallist__sm__bg .meallist__text h4 {
+        font-size:18px;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size: 15px;
+    }
+    .meallist__sm__bg .meallist__img img {
+        width:80px;
+        height:80px;
+}
+}
+@media screen and (max-width:830px){
+    .meallist__container {
+        height:fit-content;
+        display: block;
+        padding-bottom: 40px;
+        overflow-y: hidden;
+    }
+    .meallist__container .meallist__sm__bg {
+        width:35rem;
+        margin-top: 20px;
+        margin-left: 30px;
+        height:170px;
+
+    }
+    .meallist__sm__bg .meallist__text {
+        line-height: 32px;
+    }
+    .meallist__sm__bg .meallist__text h4 {
+        font-size:25px;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size: 20px;
+    }
+    .meallist__sm__bg .meallist__text span {
+        font-size:18px;
+    }
+    .meallist__sm__bg .meallist__img img {
+        width:130px;
+        height:130px;
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width:635px) {
+    .meallist__container .meallist__sm__bg {
+        width:32rem;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:620px) {
+    .meallist__container .meallist__sm__bg {
+        width:32rem;
+    }
+}
+@media screen and (max-width:565px) {
+    .meallist__container .meallist__sm__bg {
+        width:27rem;
+    }
+}
+@media screen and (max-width:490px) {
+    .meallist__container .meallist__sm__bg {
+        width:25rem;
+        margin-left: 5px;
+    }
+    .meallist__sm__bg .meallist__img img {
+        width:120px;
+        height:120px;
+    }
+}
+@media screen and (max-width:470px) {
+    .meallist__sm__bg .meallist__img img {
+        width:100px;
+        height:100px;
+    }
+}
+@media screen and (max-width:445px) {
+    .meallist__container .meallist__sm__bg {
+        width:23rem;
+    }
+    .meallist__sm__bg .meallist__text h4 {
+        font-size:20px;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size:18px;
+    }
+    .meallist__sm__bg .meallist__text span {
+        font-size:15px;
+    }
+}
+@media screen and (max-width:400px) {
+    .meallist__container .meallist__sm__bg {
+        width:20rem;
+        height:20vh;
+    }
+}
+@media screen and (max-width:365px) {
+    .meallist__container .meallist__sm__bg {
+        width:19rem;
+        margin-left: 10px;
+    }
+    .meallist__sm__bg .meallist__text h4 {
+        font-size:18px;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size: 15px;
+    }
+    .meallist__sm__bg .meallist__text span {
+        font-size:13px;
+    }
+    .meallist__sm__bg .meallist__img img {
+        width:70px;
+        height:70px;
+    }
+}
+@media screen and (max-width:330px) {
+    .meallist__container .meallist__sm__bg {
+        width:17rem;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:320px) {
+    .meallist__container .meallist__sm__bg {
+        width:15rem;
+    }
+    .meallist__sm__bg .meallist__text p {
+        font-size: 15px;
+    }
+}
