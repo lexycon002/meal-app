@@ -1,0 +1,36 @@
+.mealproduct__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:80px;
+    /* overflow-y: hidden; */
+    overflow-x: scroll;
+    padding-bottom: 20px;
+}
+.mealproduct__container::-webkit-scrollbar {
+    display: none;
+}
+.mealproduct__container .mealproduct {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 350ms;
+}
+.mealproduct__container .mealproduct:hover {
+    transform:scale(1.1);
+}
+.mealproduct__container .mealproduct img {
+    width:8rem;
+    height:8rem;
+    margin-right:25px;
+    border-radius:50%;
+    border: 2px solid green;
+    margin-bottom: 10px;
+}
+.mealproduct__container .mealproduct span {
+    font-size: 14px;
+    font-weight: bold;
+    color:green;
+}

@@ -1,0 +1,109 @@
+.cart__items__cont {
+    background: hsla(0, 100%, 99%, 0.9);
+}
+.cart-info .item__title {
+    color:black;
+    font-weight:400;
+}
+.cart-info .item__price {
+    color:green;
+}
+.cart__item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 400;
+    margin-left: 10px;
+}
+.cart__img {
+    margin-right:10px;
+}
+.cart__img img {
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+.cart__info__cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart__info__del {
+    position: absolute;
+    right:5%;
+}
+.cart__info__del span {
+    font-size: 25px;
+    color:hsl(0, 71%, 57%);
+    cursor:pointer;
+}
+.cart_incre_button {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+.cart_incre_button button {
+    background: green;
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+.cart_incre_button .math_operator {
+    font-size: 15px;
+}
+.cart_incre_button .number {
+    margin-left: 10px;
+    margin-right:10px;
+    color:black;
+    font-weight: bold;
+}
+.empty__cart {
+    color:black;
+    font-size: 18px;
+    text-align:center;
+    margin-top: 10px;
+}
+.cart__sub__total .sub__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    border-bottom: 2px solid green;
+    border-top: 2px solid green;
+}
+.cart__sub__total .sub__total p {
+    color:rgb(7,3,35);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.cart__sub__total .sub__total span {
+    font-size: 18px;
+    font-weight: 400;
+    color:green;
+}
+.cart__checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:green;
+    height:40px;
+}
+.cart__checkout .checkout__link {
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media screen and (max-width:500px){
+    .cart__img img {
+        width:70px;
+        height:70px;
+        border-radius: 50%;
+    }
+    .cart__info__del span {
+        font-size:18px;
+    }
+}
