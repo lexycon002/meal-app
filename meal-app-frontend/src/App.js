@@ -10,7 +10,8 @@ import HomePage from "./components/homePage/Home";
 import Cart from "./components/mycart/Cart";
 import CheckOut from "./components/checkout/CheckOut";
 import { ToastContainer } from "react-toastify";
-
+import LoginUser from './auth/login/LoginUser'
+import RegisterUser from "./auth/register/RegisterUser";
 
 function App() {
   const [appLoading, setAppLoading] = useState(true);
@@ -20,21 +21,31 @@ function App() {
     };
     setTimeout(finishLoading, 1000);
   },[])
+
   return (
     <div className="app">
       {appLoading ? <Loader /> : (
         <>
-        <ToastContainer />
+          <ToastContainer />
           <BrowserRouter>
-              <Header/>
-              <Navbar />
             <Routes>
-              <Route path="/" element={<HomePage/>} />
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Header/>
+                    <Navbar />
+                    <HomePage />
+                    <Support />
+                    <Footer />
+                  </>
+                }
+              />
               <Route path="/checkout" element={<CheckOut/>} />
               <Route path="/mycart" element={<Cart/>} />
+              <Route path="/login" element={<LoginUser/>} />
+              <Route path="/register" element={<RegisterUser/>} />
             </Routes>
-              <Support />
-              <Footer />
           </BrowserRouter>
         </>
       )}

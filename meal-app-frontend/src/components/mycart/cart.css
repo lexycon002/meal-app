@@ -84,6 +84,17 @@
     font-weight: 400;
     color:green;
 }
+.clear__cart {
+    background:hsl(0, 71%, 57%);
+    width:100%;
+    height:40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
 .cart__checkout {
     display: flex;
     align-items: center;

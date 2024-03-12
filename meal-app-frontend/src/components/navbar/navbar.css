@@ -47,15 +47,22 @@
     width:fit-content;
     border-bottom: 2px solid rgb(93, 209, 93) ;
 }
-.navbar__wrapper .navbar__search {
-    position: relative;
+.navbar__wrapper .navbar__auth {
+    display: flex;
+    align-items: center;
 }
-.navbar__wrapper .navbar__search input{
-    border-radius:20px;
-    width:13rem;
-    height:35px;
-    outline: none;
-    border: none;
+.navbar__wrapper .navbar__auth .--mr {
+    margin-right: 15px;
+    text-decoration: none;
+    color:white;
+}
+.navbar__wrapper .navbar__auth .navbar__login {
+
+}
+.navbar__wrapper .navbar__auth .navbar__img {
+    border-radius:50%;
+    width:45px;
+    height:45px;
 }
 .navbar__wrapper .navbar__search input::placeholder {
     padding-left: 15px;

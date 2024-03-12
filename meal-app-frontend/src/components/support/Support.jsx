@@ -2,6 +2,7 @@ import React from 'react'
 import './support.css';
 import { FaIcons, MdIcons } from '../../icon';
 import pizza from '../../assets/loader.png'
+import { NavLink } from 'react-router-dom';
 
 const supportData = [
     {
@@ -75,75 +76,73 @@ function Support() {
             <div className="support__info support__info_2">
                 <h4>information</h4>
                   <div className="support__info__list">
-                    <li><a href="#">delivery information</a></li>
-                    <li><a href="#">secure payment</a></li>
-                    <li><a href="#">about us </a></li>
-                    <li><a href="#">Top Sellers</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">our sitemap</a></li>
+                    <li><NavLink to="/">delivery information</NavLink></li>
+                    <li><NavLink to="/">secure payment</NavLink></li>
+                    <li><NavLink to="/">about us </NavLink></li>
+                    <li><NavLink to="/">Top Sellers</NavLink></li>
+                    <li><NavLink to="/">privacy policy</NavLink></li>
                   </div>
             </div>
             <div className="support__info support__info_3">
                 <h4>Customer Support</h4>
                 <div className="support__info__list">
-                  <li><a href="#">my account</a></li>
-                  <li><a href="#">shopping cart</a></li>
-                  <li><a href="#">blog</a></li>
-                  <li><a href="#">discount</a></li>
-                  <li><a href="#">order history</a></li>
-                  <li><a href="#">order tracking</a></li>
+                  <li><NavLink to="/">my account</NavLink></li>
+                  <li><NavLink to="/">shopping cart</NavLink></li>
+                  <li><NavLink to="/">blog</NavLink></li>
+                  <li><NavLink to="/">order history</NavLink></li>
+                  <li><NavLink to="/">order tracking</NavLink></li>
                 </div>
             </div>
             <div className="support__info support__info_4">
                 <h4>instagram</h4>
                 <div className="support__info__gallery">
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                     <div className="img_cont">
-                      <a href="#">
+                      <NavLink>
                         <img src={pizza} alt="" />
                         <span> <FaIcons.Instagram className="icon_gal" /></span>
-                      </a>
+                      </NavLink>
                     </div>
                 </div>
             </div>

@@ -431,7 +431,6 @@
         display:flex;
         flex-direction:column;
         align-items:flex-start;
-        justify-content:start;
     }
     .support__info_2, .support__info_4 {
         margin-left: 5px;

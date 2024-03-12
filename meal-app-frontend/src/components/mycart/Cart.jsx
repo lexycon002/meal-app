@@ -6,7 +6,7 @@ import { CartContext } from '../../context/cart';
 import Products from '../homePage/Products';
 
 function Cart() {
-    const { cartItems, deleteFromCart, decreaseQuantity, increaseQuantity, getCartTotal } = useContext(CartContext);
+    const { cartItems,clearCart, deleteFromCart, decreaseQuantity, increaseQuantity, getCartTotal } = useContext(CartContext);
 
     return (
         <div>
@@ -46,6 +46,7 @@ function Cart() {
                             <p>Subtotal:</p>
                             <span>${getCartTotal().toFixed(2)}</span>
                         </div>
+                        <button onClick={()=>clearCart()} className="clear__cart" >Clear Cart</button>
                         <div className="cart__checkout">
                             <NavLink className="checkout__link" to="/checkout">Check Out</NavLink>
                         </div>

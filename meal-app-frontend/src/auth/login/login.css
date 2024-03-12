@@ -1,0 +1,180 @@
+.navbar__logo {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.navbar__logo span {
+    font-size: 30px;
+    text-transform:lowercase;
+    color:rgb(93, 209, 93);
+}
+.login__user__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.login__user__img img {
+    width:500px;
+    height:500px;
+}
+.login__user__form {
+    background: #f5f5f5;
+    height: fit-content;
+    width:600px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 12px 9px #f5f5f5;
+-webkit-box-shadow: 0px 2px 12px 9px #f5f5f5;
+-moz-box-shadow: 0px 2px 5px 9px #f5f5f5;
+}
+
+.form__container {
+    position: relative;
+}
+.login__user__info h5 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom:30px;
+    font-weight: 400;
+}
+.login__user__option button {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    width:90%;
+    height: 40px;
+    background: white;
+    border:none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.login__user__option button img {
+    width:25px;
+    height:25px;
+    margin-right:10px;
+}
+.login__user__option p {
+    font-size:15px;
+    text-transform:capitalize;
+}
+.password__reset {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.password__reset .password__reset__link {
+    text-decoration: none;
+}
+.space__bar {
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.border__left {
+    width:43%;
+    border-bottom:1px solid green;
+}
+.border__right {
+    width:43%;
+    border-bottom:1px solid green;
+}
+.form__container {
+    margin-top:50px;
+}
+.form__container .form__input__cont {
+    font-size: 14px;
+    position: relative;
+    margin-bottom:25px;
+    margin-left: 30px;
+}
+.form__container .form_input {
+    all:unset;
+    color:green;
+    padding: 10px;
+    border:1px solid green;
+    border-radius:10px;
+    width:90%;
+    height:35px;
+    transition:400ms cubic-bezier(0.6, 0, 0.3, 1);
+}
+.form__container label {
+    position: absolute;
+    top:15px;
+    left:10px;
+    color:#636060;
+    pointer-events: none;
+    transition:400ms cubic-bezier(0.6, 0, 0.3, 1);
+}
+.form__container .form_input:is(:focus, :valid) ~ label {
+    transform: translateY(-100%) scale(0.7);
+    background-color:#f5f5f5;
+    padding-inline:15px;
+    letter-spacing:3px;
+    color:green;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+.form__container button {
+    width:90%;
+    height:45px;
+    font-size:20px;
+    margin-left:30px;
+    background: green;
+    color:white;
+    border:1px solid green;
+    cursor: pointer;
+}
+.form__container .user__register {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.user__register p {
+    font-size: 17px;
+}
+.user__register .register {
+    text-decoration: none;
+}
+
+@media screen and (max-width:950px) {
+.login__user__img img {
+    width:400px;
+    height:400px;
+}
+.login__user__form {
+    width:500px;
+}
+}
+
+@media screen and (max-width:800px) {
+.login__user__img img {
+    width:350px;
+    height:350px;
+}
+.login__user__form {
+    width:400px;
+}
+}
+
+@media screen and (max-width:768px){
+    .login__user__container {
+        flex-direction:column;
+    }
+}
+@media screen and (max-width:410px){
+    .form__container .form__input__cont {
+        /* margin-left: 40px; */
+    }
+    .form__container button {
+        margin-left:0;
+    }
+    .form__container .user__register {
+        margin-left:0;
+    }
+}

@@ -7,8 +7,6 @@ import { CartContext } from '../../context/cart';
 
 
 
-
-
 function Products() {
     // const [menuClose, setMenuClose] = useState(false)
     const [ selectproductOption, setSelectProductOption] = useState("all_products");
@@ -39,9 +37,11 @@ function Products() {
     // const productClick = (product) => {
     //     setSelectedProduct(product);
     // }
+    // function to load more item/product
     const loadMoreItems = () => {
         setDisplayedItems(prevCount => prevCount + 5);
     }
+    //Function to short to shorten a long text
     const truncate = (text, n) => {
         if(text.length > n){
             const trunc = text.substring(0, n).concat("...");

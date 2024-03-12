@@ -4,14 +4,13 @@ import { IoIcons, Io5Icons } from '../../icon'
 import iconBask from '../../assets/icon-basket.png'
 import { NavLink } from 'react-router-dom';
 import { CartContext } from '../../context/cart';
+import myImage from '../../assets/myImage03.png'
 
 
 function Navbar() {
     const [menuOpen, setIsMenuOpen] = useState(false);
     const [cartOpen, setCartOpen] = useState(false);
     const { getCartTotal,getTotalCartItems} = useContext(CartContext);
-
-
 
     const handleToggleMenu = () => {
         setIsMenuOpen(!menuOpen);
@@ -27,8 +26,7 @@ function Navbar() {
             <h3>Food<span>Yoo</span></h3>
         </div>
     )
-
-  return (
+    return (
     <div className="navbar__container">
         <div className="navbar__wrapper">
                 {logo}
@@ -54,9 +52,10 @@ function Navbar() {
                 </li>
             </ul>
             </nav>
-            <div className="navbar__search">
-                <input type="search" placeholder="Search" id="search" />
-                <span> <IoIcons.Search /></span>
+            <div className="navbar__auth">
+                <NavLink className="navbar__login --mr" to="/login">Login</NavLink>
+                <NavLink className="navbar__logout --mr" to="/">Logout</NavLink>
+                <img className="navbar__img --mr" src={myImage} alt="my_image" />
             </div>
         <div className="navbar__cart">
             <NavLink className="cart__view__link" to="/myCart"><img src={iconBask} alt="icon__bask" onClick={() => cartToggle()} /></NavLink>
