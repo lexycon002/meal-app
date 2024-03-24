@@ -3,7 +3,6 @@ import "./login.css";
 import { Link, useNavigate } from 'react-router-dom';
 import loginImg from "../../assets/register.png"
 import googleImg from "../../assets/google.png";
-// import facebookImg from "../../assets/facebook.png"
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { auth } from "../../firebase/config";
@@ -27,7 +26,7 @@ function LoginUser() {
         const user = userCredential.user;
         console.log(user);
         setIsLoading(false);
-        navigate("/")
+        navigate("/homepage")
         toast.success("Login Successfully");
     })
     .catch((error) => {
@@ -37,7 +36,6 @@ function LoginUser() {
     }
 
     // SignIn with Google
-
     const provider = new GoogleAuthProvider();
     const signInWithGoogle = () => {
         signInWithPopup(auth, provider)
@@ -45,16 +43,15 @@ function LoginUser() {
             const user = result.user;
             console.log(user);
             toast.success("Login successfully")
-            navigate("/")
+            navigate("/homepage")
         }).catch((error) => {
             console.error(error);
             toast.error("Failed to sign in with Google. Please try again.");
             // toast.error(error.message)
         });
     }
-
     return (
-    <>
+    <div className="container">
         <div className="navbar__logo">
             <h3>Food<span>Yoo</span></h3>
         </div>
@@ -87,8 +84,8 @@ function LoginUser() {
                     </div>
                     <button type="submit">Login</button>
                 </div>
-                <div className="password__reset">
-                    <Link className="password__reset__link" to="/reset-password">Reset Password</Link>
+                <div className="forgot__password">
+                    <Link className="forgot__password__link" to="/passwordreset">Forgot Password?</Link>
                 </div>
                 <div className="space__bar">
                     <div className="border__left"></div>
@@ -103,12 +100,12 @@ function LoginUser() {
                 </div>
                 <div className="user__register">
                     <p>Don't have an account?</p>
-                    <p><Link className="register" to="/register">Register</Link></p>
+                    <p><Link className="register" to="/">Register</Link></p>
                 </div>
             </form>
         </div>
     </div>
-    </>
+    </div>
   )
 }
 

@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { CartProvider } from './context/cart';
+import { store } from "./redux/Store";
+import { Provider } from "react-redux"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
     <CartProvider>
         <App />
     </CartProvider>
-  </React.StrictMode>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );

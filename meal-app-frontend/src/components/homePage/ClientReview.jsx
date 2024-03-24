@@ -1,7 +1,7 @@
 import React from 'react'
 import './clientReview.css';
 import { BiIcons, IoIcons } from '../../icon';
-import myImage from '../../assets/myImage03.png';
+
 
 
 const clientData = [

@@ -20,6 +20,7 @@
 }
 .login__user__form {
     background: #f5f5f5;
+    /* background: green; */
     height: fit-content;
     width:600px;
     border-radius: 10px;
@@ -36,15 +37,15 @@
     font-size: 28px;
     margin-top: 20px;
     margin-bottom:30px;
-    font-weight: 400;
+    font-weight: 600;
 }
-.login__user__option button {
+.login__user__option .google__login {
     display: flex;
     align-items: center;
     place-content: center;
     width:90%;
     height: 40px;
-    background: white;
+    background: green;
     border:none;
     margin-bottom: 10px;
     cursor: pointer;
@@ -59,12 +60,15 @@
     font-size:15px;
     text-transform:capitalize;
 }
-.password__reset {
+.forgot__password {
     margin-top: 10px;
     margin-left: 30px;
 }
-.password__reset .password__reset__link {
+.forgot__password .forgot__password__link {
     text-decoration: none;
+}
+.forgot__password .forgot__password__link:hover {
+    color:blue;
 }
 .space__bar {
     display:flex;
@@ -87,7 +91,7 @@
     font-size: 14px;
     position: relative;
     margin-bottom:25px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .form__container .form_input {
     all:unset;
@@ -163,18 +167,46 @@
 }
 
 @media screen and (max-width:768px){
+
     .login__user__container {
         flex-direction:column;
     }
+    .login__user__img img {
+        display:none;
+    }
 }
-@media screen and (max-width:410px){
+@media screen and (max-width:400px) {
+    .container {
+        overflow-x:hidden;
+    }
+    .form__container .form_input {
+        width:100%;
+    }
+}
+@media screen and (max-width:380px) {
+    .login__user__container {
+        margin-right:20px;
+    }
+}
+@media screen and (max-width:360px) {
+    .login__user__container {
+        padding-right:40px;
+        margin-left:40px;
+    }
+}
+@media screen and (max-width:340px){
+    .forgot__password {
+        margin-left:40px;
+    }
     .form__container .form__input__cont {
-        /* margin-left: 40px; */
+        margin-left:40px;
+    }
+}
+@media screen and (max-width:320px){
+    .forgot__password {
+        margin-left:40px;
     }
     .form__container button {
-        margin-left:0;
-    }
-    .form__container .user__register {
         margin-left:0;
     }
 }

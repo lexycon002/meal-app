@@ -35,8 +35,8 @@
     text-align: center;
     font-size: 28px;
     margin-top: 20px;
-    margin-bottom:30px;
-    font-weight: 400;
+    margin-bottom:10px;
+    font-weight: 600;
 }
 .register__user__option button {
     display: flex;
@@ -49,9 +49,9 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
-.register__user__option .fb__img {
+/* .register__user__option .fb__img {
     padding-left:20px;
-}
+} */
 .register__user__option button img {
     width:25px;
     height:25px;
@@ -76,7 +76,7 @@
     border-bottom:1px solid green;
 }
 .form__container {
-    margin-top:50px;
+    margin-top:30px;
 }
 .form__container .form__input__cont {
     font-size: 14px;
@@ -136,6 +136,9 @@
 .user__register .register {
     text-decoration: none;
 }
+.user__register .register:hover {
+    color:blue;
+}
 
 @media screen and (max-width:950px) {
 .register__user__img img {
@@ -160,10 +163,38 @@
 @media screen and (max-width:768px){
     .register__user__container {
         flex-direction:column;
+        overflow:hidden;
+    }
+    .register__user__img img {
+        display:none;
     }
 }
-@media screen and (max-width:410px){
+@media screen and (max-width:340px){
     .form__container .form__input__cont {
-        margin-left:15px;
+        margin-left:40px;
+    }
+    .form__container button {
+        margin-left:35px;
+    }
+    .form__container .user__register {
+        margin-left:35px;
+    }
+}
+@media screen and (max-width:320px){
+    .form__container .form__input__cont {
+        margin-left:45px;
+    }
+    .form__container button {
+        width:85%;
+        margin-left:50px;
+    }
+}
+@media screen and (max-width:310px){
+    .form__container .form__input__cont {
+        margin-left:50px;
+    }
+    .form__container button {
+        width:85%;
+        margin-left:50px;
     }
 }

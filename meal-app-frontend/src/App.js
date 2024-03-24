@@ -10,8 +10,10 @@ import HomePage from "./components/homePage/Home";
 import Cart from "./components/mycart/Cart";
 import CheckOut from "./components/checkout/CheckOut";
 import { ToastContainer } from "react-toastify";
-import LoginUser from './auth/login/LoginUser'
+import LoginUser from './auth/login/LoginUser';
 import RegisterUser from "./auth/register/RegisterUser";
+import PasswordReset from "./auth/passwordreset/PasswordReset";
+
 
 function App() {
   const [appLoading, setAppLoading] = useState(true);
@@ -30,7 +32,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route
-                path="/"
+                path="/homepage"
                 element={
                   <>
                     <Header/>
@@ -44,7 +46,8 @@ function App() {
               <Route path="/checkout" element={<CheckOut/>} />
               <Route path="/mycart" element={<Cart/>} />
               <Route path="/login" element={<LoginUser/>} />
-              <Route path="/register" element={<RegisterUser/>} />
+              <Route path="/" element={<RegisterUser/>} />
+              <Route path="/passwordreset" element={<PasswordReset/>} />
             </Routes>
           </BrowserRouter>
         </>

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import "./register.css";
 import { Link, useNavigate } from 'react-router-dom';
-import loginImg from "../../assets/register.png"
-import googleImg from "../../assets/google.png";
-// import facebookImg from "../../assets/facebook.png"
+import RegisterImg from "../../assets/registerUser.png"
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { auth } from "../../firebase/config"
@@ -15,7 +13,7 @@ function RegisterUser() {
     const [email, setEmail ] = useState("");
     const [password, setPassword] = useState("");
     const [cpassword, setCPassword] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
+    const [ isLoading, setIsLoading ] = useState(false);
 
     const navigate = useNavigate()
 
@@ -47,7 +45,7 @@ function RegisterUser() {
         </div>
     <div className="register__user__container">
         <div className="register__user__img">
-            <img src={loginImg} alt="login.." />
+            <img src={RegisterImg} alt="login.." />
         </div>
         <div className="register__user__form">
             <div className="register__user__info">
@@ -70,7 +68,7 @@ function RegisterUser() {
                         required
                         value={password} onChange={(e) => setPassword(e.target.value)}
                         />
-                        <label  className="form__pass">Password</label>
+                        <label  className="form__pass">Create Password</label>
                     </div>
                     <div className="form__input__cont">
                         <input
@@ -83,11 +81,11 @@ function RegisterUser() {
                     </div>
                     <button type="submit">Register</button>
                 </div>
-                <div className="space__bar">
+                {/* <div className="space__bar">
                     <div className="border__left"></div>
                         <p>Or</p>
                     <div className="border__right"></div>
-                </div>
+                </div> */}
                 {/* <div className="register__user__option">
                     <button className="google__login" onClick={signInWithGoogle}>
                         <img src={googleImg} alt="google_img" />

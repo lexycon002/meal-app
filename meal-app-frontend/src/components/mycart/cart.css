@@ -16,7 +16,7 @@
     margin-left: 10px;
 }
 .cart__img {
-    margin-right:10px;
+    margin-right:20px;
 }
 .cart__img img {
     width:150px;
@@ -41,10 +41,19 @@
     display: flex;
     margin-top: 5px;
     align-items: center;
+    background:green;
+    width:100px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 .cart_incre_button button {
-    background: green;
-    color:white;
+    background: white;
+    height:30px;
+    width:30px;
+    color:green;
+    border-radius:50%;
     border:none;
     cursor: pointer;
 }
@@ -54,7 +63,7 @@
 .cart_incre_button .number {
     margin-left: 10px;
     margin-right:10px;
-    color:black;
+    color:white;
     font-weight: bold;
 }
 .empty__cart {
@@ -116,5 +125,15 @@
     }
     .cart__info__del span {
         font-size:18px;
+    }
+}
+@media screen and (max-width:360px) {
+    .cart_incre_button {
+        width:80px;
+        padding: 5px;
+    }
+    .cart_incre_button button {
+        height:25px;
+        width:25px;
     }
 }

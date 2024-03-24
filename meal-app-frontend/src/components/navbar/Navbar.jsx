@@ -5,12 +5,26 @@ import iconBask from '../../assets/icon-basket.png'
 import { NavLink } from 'react-router-dom';
 import { CartContext } from '../../context/cart';
 import myImage from '../../assets/myImage03.png'
+import { useDispatch, useSelector } from 'react-redux';
+import { login, logout, selectIsLoggedIn } from '../../redux/authSlice';
 
 
 function Navbar() {
     const [menuOpen, setIsMenuOpen] = useState(false);
     const [cartOpen, setCartOpen] = useState(false);
     const { getCartTotal,getTotalCartItems} = useContext(CartContext);
+
+
+    const dispatch = useDispatch();
+    const isLoggedIn = useSelector(selectIsLoggedIn);
+
+    const handleLogout = () => {
+    dispatch(logout());
+    };
+
+    const handleLogin = () => {
+    dispatch(login());
+    };
 
     const handleToggleMenu = () => {
         setIsMenuOpen(!menuOpen);
@@ -53,10 +67,13 @@ function Navbar() {
             </ul>
             </nav>
             <div className="navbar__auth">
-                <NavLink className="navbar__login --mr" to="/login">Login</NavLink>
-                <NavLink className="navbar__logout --mr" to="/">Logout</NavLink>
-                <img className="navbar__img --mr" src={myImage} alt="my_image" />
+                {isLoggedIn ? (
+                <NavLink className="navbar__login --mr" onClick={handleLogin} to="/login">Login</NavLink>
+                ) : (
+                <NavLink className="navbar__logout --mr" onClick={handleLogout} to="/">Logout</NavLink>
+                )}
             </div>
+
         <div className="navbar__cart">
             <NavLink className="cart__view__link" to="/myCart"><img src={iconBask} alt="icon__bask" onClick={() => cartToggle()} /></NavLink>
             <span>{getTotalCartItems()}items : ${getCartTotal().toFixed(2)}</span>
