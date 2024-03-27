@@ -39,7 +39,6 @@ function App() {
                     <Navbar />
                     <HomePage />
                     <Support />
-                    <Footer />
                   </>
                 }
               />
@@ -49,6 +48,7 @@ function App() {
               <Route path="/" element={<RegisterUser/>} />
               <Route path="/passwordreset" element={<PasswordReset/>} />
             </Routes>
+            <Footer />
           </BrowserRouter>
         </>
       )}
