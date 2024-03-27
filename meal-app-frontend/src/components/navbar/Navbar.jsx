@@ -50,25 +50,25 @@ function Navbar() {
                 </div>
                 <ul className="navbar__links">
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="#">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/">Shop</NavLink>
+                    <NavLink to="#">Shop</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/">Pages</NavLink>
+                    <NavLink to="#">Pages</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/">Blog</NavLink>
+                    <NavLink to="#">Blog</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/">Contact</NavLink>
+                    <NavLink to="#">Contact</NavLink>
                 </li>
                 <li className="navbar__auth">
                     {isLoggedIn ? (
                     <NavLink className="navbar__login --mr" onClick={handleLogin} to="/login">Login</NavLink>
                     ) : (
-                    <NavLink className="navbar__logout --mr" onClick={handleLogout} to="/">Logout</NavLink>
+                    <NavLink className="navbar__logout --mr" onClick={handleLogout} to="/login">Logout</NavLink>
                     )}
                 </li>
             </ul>
