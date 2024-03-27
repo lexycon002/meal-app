@@ -66,9 +66,10 @@
 }
 .forgot__password .forgot__password__link {
     text-decoration: none;
+    font-size:14px;
 }
 .forgot__password .forgot__password__link:hover {
-    color:blue;
+    color:black;
 }
 .space__bar {
     display:flex;
@@ -179,34 +180,48 @@
     .container {
         overflow-x:hidden;
     }
-    .form__container .form_input {
-        width:100%;
+    .form__container button{
+        margin-left:20px;
     }
 }
 @media screen and (max-width:380px) {
     .login__user__container {
         margin-right:20px;
     }
+    .form__container button{
+        margin-left:27px;
+    }
+
+   .forgot__password .forgot__password__link{
+        font-size:15px !important;
+    }
 }
 @media screen and (max-width:360px) {
-    .login__user__container {
-        padding-right:40px;
-        margin-left:40px;
+   .form__container .form_input {
+        width:85%;
+    }
+    .login__user__form {
+        padding-left:25px;
     }
 }
 @media screen and (max-width:340px){
     .forgot__password {
-        margin-left:40px;
+        /* margin-left:40px; */
     }
     .form__container .form__input__cont {
-        margin-left:40px;
+        width:83%;
+    }
+    .forgot__password{
+        padding-left: 10px;
     }
 }
-@media screen and (max-width:320px){
-    .forgot__password {
-        margin-left:40px;
+@media screen and (max-width:315px){
+    .forgot__password{
+        padding-left: 15px;
     }
-    .form__container button {
-        margin-left:0;
+}
+@media screen and (max-width:300px){
+    .forgot__password{
+        padding-left:20px;
     }
 }

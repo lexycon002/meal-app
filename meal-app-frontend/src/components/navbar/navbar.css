@@ -47,18 +47,12 @@
     width:fit-content;
     border-bottom: 2px solid rgb(93, 209, 93) ;
 }
-.navbar__wrapper .navbar__auth {
-    display: flex;
-    align-items: center;
-}
-.navbar__wrapper .navbar__auth .--mr {
-    margin-right: 15px;
-    text-decoration: none;
-    color:white;
-}
-.navbar__wrapper .navbar__auth .navbar__login {
 
+.navbar__wrapper .navbar__auth .--mr {
+    text-decoration: none;
+    color:orangered;
 }
+
 .navbar__wrapper .navbar__auth .navbar__img {
     border-radius:50%;
     width:45px;
@@ -124,9 +118,11 @@
 
     .navbar__wrapper .navbar__cart {
         margin-right:70px;
+        margin-top: 30px;
     }
     .navbar__wrapper .open-btn {
         display: block;
+        margin-top: 30px;
     }
     .close-btn {
        display: block;

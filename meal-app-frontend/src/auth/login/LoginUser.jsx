@@ -85,7 +85,7 @@ function LoginUser() {
                     <button type="submit">Login</button>
                 </div>
                 <div className="forgot__password">
-                    <Link className="forgot__password__link" to="/passwordreset">Forgot Password?</Link>
+                    <p><Link className="forgot__password__link" to="/passwordreset">Forgot Password?</Link></p> 
                 </div>
                 <div className="space__bar">
                     <div className="border__left"></div>

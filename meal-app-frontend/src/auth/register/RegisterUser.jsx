@@ -81,17 +81,6 @@ function RegisterUser() {
                     </div>
                     <button type="submit">Register</button>
                 </div>
-                {/* <div className="space__bar">
-                    <div className="border__left"></div>
-                        <p>Or</p>
-                    <div className="border__right"></div>
-                </div> */}
-                {/* <div className="register__user__option">
-                    <button className="google__login" onClick={signInWithGoogle}>
-                        <img src={googleImg} alt="google_img" />
-                        <p>use google account</p>
-                    </button>
-                </div> */}
                 <div className="user__register">
                     <p>Already have an account?</p>
                     <p><Link className="register" to="/login">Login</Link></p>
